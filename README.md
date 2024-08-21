@@ -7,7 +7,7 @@ I use this script to automate some configuration steps within my Next.js project
 ## Step 1
 
 ```
-git clone https://github.com/ArthurViniciusL/config-next-app
+git clone https://github.com/ArthurViniciusL/improve-next-app
 ```
 ```
 cd improve-next-app
