@@ -13,7 +13,7 @@ git clone https://github.com/ArthurViniciusL/improve-next-app
 cd improve-next-app
 ```
 ```
-chmod +x improve-config.sh
+chmod +x improve-next-app.sh
 ```
 
 ### Step 2
@@ -21,5 +21,5 @@ chmod +x improve-config.sh
 1. Go to your project folder next
 2. Run script with:
 ```
-./improve-config.sh
+./improve-next-app.sh
 ``` 
