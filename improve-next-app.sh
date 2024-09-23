@@ -67,7 +67,7 @@ echo -e "📄 - custom.d.ts \n📄 - next.config.mjs \n📝 - app.routes.ts"
 sleep 0.5
 
 # ---------------------------------------------------------------------------
-cd ./src/app
+cd src
 
 touch app.routes.ts
 echo "/* @arthur.vsl */
@@ -88,8 +88,8 @@ sleep 0.5
 #📁📂
 
 clear
-echo "Creating subfolders..."
-#echo -e "📂 - assets \n📂 - components \n📂 - context \n📂 - linux \n📂 - modules \n📂 - pages \n📂 - styles \n📂 - utils"
+echo "Creating folders..."
+#echo -e "📂 - assets \n📂 - components \n📂 - context \n📂 - linux \n📂 - modules  \n📂 - styles \n📂 - utils \n📂 - pages"
 sleep 1
 
 folders=(
@@ -98,9 +98,9 @@ folders=(
     "context"
     "linux"
     "modules"
-    "pages"
     "styles"
     "utils"
+    "pages"
 )
 
 for folder in "${folders[@]}"
@@ -111,13 +111,18 @@ for folder in "${folders[@]}"
         sleep 0.5
         #clear
     done
+    
+mv pages app
+mv styles app
+cd app
+mv "globals.css" styles
 
 clear
 
 # -----------------------------------------------------------------------------------------------------------------------
 echo "Creating content in subfolders..."
 
-cd modules
+cd ../modules
 touch app.modules.ts
 echo -e '/* @arthur.vsl */
 
@@ -130,10 +135,6 @@ echo -e '/* @arthur.vsl */
 export {
     // itens as newName
 } from "your-lib"; ' > app.modules.ts
-
-# ---------------------------------------------------------------------------
-cd ../styles
-mv global.css styles
 
 # ---------------------------------------------------------------------------
 cd ../assets
